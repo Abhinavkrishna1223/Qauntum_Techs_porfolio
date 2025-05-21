@@ -7,57 +7,57 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
+    title: "Collegedisha",
+    description: "An Edtech website deals with college admissions, courses and counselling.",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    // gitUrl: "/",
+    previewUrl: "https://collegedisha.com",
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
+    title: "Schools18",
+    description: "An edtech website deals with school admissions and counselling.",
     image: "/images/projects/2.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    // gitUrl: "/",
+    previewUrl: "https://schools18.com/",
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
+    title: "Colleges18",
+    description: "An Edtech website deals with college admissions, courses and counselling.",
     image: "/images/projects/3.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    // gitUrl: "/",
+    previewUrl: "https://www.colleges18.com/",
   },
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
+    title: "Rathi Farms",
+    description: "Enjoy hassle-free online vegetable, grocery shopping, and contactless home delivery at just a click of a button.",
     image: "/images/projects/4.png",
     tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
+    // gitUrl: "/",
+    previewUrl: "https://play.google.com/store/apps/details?id=com.rathifarms&hl=en_US",
   },
   {
     id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
+    title: "Apna Kisan",
+    description: "manufacturer of a wide range of agri products and parts.",
     image: "/images/projects/5.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: ["All", "Mobile"],
+    // gitUrl: "/",
+    previewUrl: "https://play.google.com/store/apps/details?id=com.blackhatcode.in.ssa_app.new&hl=en_US",
   },
   {
     id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
+    title: "My Jobee",
+    description: "It is a job searching platform. ",
     image: "/images/projects/6.png",
-    tag: ["All", "Web"],
+    tag: ["All", "Mobile"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "https://play.google.com/store/search?q=my%20jobee&c=apps&hl=en_US",
   },
 ];
 
@@ -84,7 +84,7 @@ const ProjectsSection = () => {
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
         My Projects
       </h2>
-      <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
+      <div className="text-white flex flex-row justify-evenly items-center gap-2 py-6">
         <ProjectTag
           onClick={handleTagChange}
           name="All"

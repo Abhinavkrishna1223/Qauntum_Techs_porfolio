@@ -6,6 +6,13 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 const HeroSection = () => {
+
+ function handleHireMeClick() {
+  const phoneNumber = "9485789907"; // Add your country code (e.g., 91 for India)
+  const message = encodeURIComponent("I am contacting to discuss");
+  window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
+}
+
   return (
     <section className="lg:py-16">
       <div className="grid grid-cols-1 sm:grid-cols-12">
@@ -17,18 +24,14 @@ const HeroSection = () => {
         >
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
-              Hello, I&apos;m{" "}
+              {/* Hello, I&apos;m{" "} */} Hello, Welcome TO
             </span>
             <br></br>
             <TypeAnimation
               sequence={[
-                "Judy",
+                "Quantum Techs",
                 1000,
-                "Web Developer",
-                1000,
-                "Mobile Developer",
-                1000,
-                "UI/UX Designer",
+                "Software Company",
                 1000,
               ]}
               wrapper="span"
@@ -37,24 +40,24 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            voluptatum.
+            I am a young Entrepreneur and a MERN stack developer with 2 years of experience and skilled professional proficient in using the MERN (MongoDB, Express.js, React.js, Node.js) technology stack along with Version Control systems and Problem-Solving Skills to develop robust, scalable, and efficient web applications. We have a good tech team of young aspirational software devlopers, who are old in this business. We assure full assistance till project delivered to you as well as provide you 6 months free tech support like bug fixing and Technical SEO.
           </p>
           <div>
-            <Link
-              href="/contact"
+            <button
+              type="button"
+              onClick={handleHireMeClick}
               className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
             >
-              Hire Me
-            </Link>
-            <Link
+              Hire Us
+            </button>
+            {/* <span
               href="/"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
             >
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+              <a href="/pdf/AbhinavKrishnaResume.pdf" download={true} className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                 Download CV
-              </span>
-            </Link>
+              </a>
+            </span> */}
           </div>
         </motion.div>
         <motion.div
@@ -65,7 +68,7 @@ const HeroSection = () => {
         >
           <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
             <Image
-              src="/images/hero-image.png"
+              src="https://cdn.mos.cms.futurecdn.net/P92PFVFm8vaDwFP77uasKQ.jpg"
               alt="hero image"
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               width={300}
